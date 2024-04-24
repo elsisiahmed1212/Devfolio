@@ -1,0 +1,37 @@
+@media screen and (max-width: 480px) {
+/* start navbar */
+.navbar>.container{
+    background-color: black;
+}
+.navbar ul li:hover:before{
+    visibility: hidden;
+}
+/* end navbar */
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+/* start navbar */
+.navbar>.container{
+    background-color: black;
+}
+.navbar ul li:hover:before{
+    visibility: hidden;
+}
+/* end navbar */
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+/* start navbar */
+.navbar>.container{
+    background-color: black;
+}
+.navbar ul li:hover:before{
+    visibility: hidden;
+}
+/* end navbar */
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+
+}
+

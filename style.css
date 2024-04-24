@@ -1,0 +1,526 @@
+
+body{
+    background-color: #F5F5F5;
+}
+:root{
+    --color-white:white;
+    --color-gren:#0078FF;
+    --color-hover:#CDE1F8;
+    --color-footer:#0548a6e4;
+    --color-black:black;
+}
+ul li{
+    list-style: none;
+}
+ol li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+textarea{
+    resize: none;
+}
+.w-14{
+    width: 14%;
+    object-fit: cover;
+    height: 10%;
+}
+form input,textarea{
+    border: 1px solid #DEE2E6;
+}
+form input,textarea:focus{
+    outline-color: rgba(0, 47, 255, 0.695);
+}
+body{
+    scroll-behavior: smooth;
+}
+/* end globall */
+/* start navbar */
+.navbar{
+    --bs-navbar-padding-y:-1px;
+    --bs-navbar-brand-font-size:30px;
+}
+.navbar-nav{
+    --bs-nav-link-color:var(--color-white);
+    --bs-nav-link-font-size:18px;
+    --bs-nav-link-font-weight:600;
+    --bs-nav-link-hover-color:var(--color-white);
+}
+.nav-item{
+    position: relative;
+}
+.navbar ul li::before{
+    position: absolute;
+    content: '';
+    background-color: var(--color-white);
+    width: 0%;
+    bottom: -1px;
+    left:10px;
+    height: 1px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s all;
+}
+.navbar ul li:hover:before{
+    width: 70%;
+    opacity: 1;
+    visibility: visible;
+}
+/* end navbar */
+/* start hader */
+.header{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),url(images/hero-bg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flow-root;
+    text-align: center;
+}
+
+.header .info {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+}
+.header .info h1{
+    margin-bottom: 20px;
+    font-size: 60px;
+    font-weight: 600;
+}
+.header .info p{
+    font-size: 40px;
+    font-weight: 600;
+    position: relative;
+}
+.header .info p::after{
+    position: absolute;
+    content: '';
+    top: 20%;
+    left: 50%;
+    transform: translateX(-80%);
+    width: 100px;
+    height: 2px;
+    animation:typeext 16s infinite ;
+}
+@keyframes typeext {
+    0%{
+        content: 'D';
+    }
+    1%{
+        content: 'De';
+    }
+    2%{
+        content: 'Des';
+    }
+    3%{
+        content: 'Desi';
+    }
+    4%{
+        content: 'Desig';
+    }
+    5%{
+        content: 'Design';
+    }
+    6%{
+        content: 'Designe';
+    }
+    7%{
+        content: 'Designer';
+    }
+    8%{
+        content: 'Designe';
+    }
+    9%{
+        content: 'Design';
+    }
+    10%{
+        content: 'Desig';        
+    }
+    11%{
+        content: 'Desi';        
+    }
+    12%{
+        content: 'Des';        
+    }
+    13%{
+        content: 'De';        
+    }
+    14%{
+        content: 'D';        
+    }
+    15%{
+        content: 'D';        
+    }
+    16%{
+        content: 'De';        
+    }
+    17%{
+        content: 'Dev';        
+    }
+    18%{
+        content: 'Deve';        
+    }
+    19%{
+        content: 'Devel';        
+    }
+    20%{
+        content: 'Develo';        
+    }
+    21%{
+        content: 'Develop';        
+    }
+    22%{
+        content: 'Develop';        
+    }
+    23%{
+        content: 'Develope';        
+    }
+    24%{
+        content: 'Developer';        
+    }
+    25%{
+        content: 'Develope';        
+    }
+    26%{
+        content: 'Develop';        
+    }
+    27%{
+        content: 'Develo';        
+    }
+    28%{
+        content: 'Devel';        
+    }
+    29%{
+        content: 'Deve';        
+    }
+    30%{
+        content: 'Dev';        
+    }
+    31%{
+        content: 'De';        
+    }
+    32%{
+        content: 'D';        
+    }
+    33%{
+        content: 'F';        
+    }
+    34%{
+        content: 'Fr';        
+    }
+    35%{
+        content: 'Fre';        
+    }
+    36%{
+        content: 'Free';        
+    }
+    37%{
+        content: 'Freel';        
+    }
+    38%{
+        content: 'Freela';        
+    }
+    39%{
+        content: 'Freelan';        
+    }
+    40%{
+        content: 'Freelanc';        
+    }
+    41%{
+        content: 'Freelance';        
+    }
+    42%{
+        content: 'Freelanc';        
+    }
+    43%{
+        content: 'Freelan';        
+    }
+    44%{
+        content: 'Freela';        
+    }
+    45%{
+        content: 'Freel';        
+    }
+    46%{
+        content: 'Free';        
+    }
+    47%{
+        content: 'Fre';        
+    }
+    48%{
+        content: 'Fr';        
+    }
+    49%{
+        content: 'F';        
+    }
+    50%{
+        content: 'Freelancer';        
+    }
+}
+/* end hader */
+/* start About */
+.About-aftter{
+    width: fit-content;
+    position: relative;
+}
+.About-aftter::before{
+    position: absolute;
+    content: '';
+    width:100%;
+    height: 3px;
+    bottom: -8px;
+    left: 0px;
+    background-color: var(--color-gren);
+}
+/* end About */
+/* start services */
+.line{
+    position: relative;
+}
+.line::after{
+    position: absolute;
+    content: '';
+    width: 4%;
+    height: 3px;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color-gren);
+}
+.services .ico-circle{
+    padding: 40px;
+    width: 100px;
+    line-height: 20px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid var(--color-gren);
+    transition: all .8s;
+}
+.services .ico-circle:hover{
+    background-color: var(--color-gren);
+    color: var(--color-white);
+    border: 10px solid var(--color-hover);
+}
+/* end services */
+/* start Carousel */
+.Carousel{
+    background-image: linear-gradient(#2869c3c0,#2869c3c0),url(images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.carousel-indicators {
+    bottom: -17px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 13px;
+    height: 13px;
+}
+/* end Carousel */
+/* start data */
+.data{
+    display: flow-root;
+    background-image:linear-gradient(#2869c3c0,#2869c3c0),url(images/counters-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.data .ico-circle{
+    padding: 40px;
+    width: 100px;
+    line-height: 20px;
+    height: 100px;
+    border-radius: 50%;
+    color: var(--color-white);
+    border: 10px solid var(--color-hover);
+    transition: all .8s;
+}
+/* end data */
+/* start portfolio */
+.portfolio .inner img{
+    transition: all 1s;
+}
+.portfolio .inner:hover img{
+    transform: scale(1.2);
+}
+.portfolio .w-more span{
+    font-size: 14px;
+}
+.portfolio .card-icon{
+    font-size: 40px;
+}
+/* end portfolio */
+/* start blog */
+.blog .inner .image-content{
+    position: relative;
+}
+.blog .inner .card-category{
+    position: absolute;
+    background-color: var(--color-gren);
+    padding: 1px 25px;
+    top: 100%;
+    left: 50%;
+    font-size: 10px;
+    transform: translate(-50%,-50%);
+}
+.blog .inner .card-category h6{
+    font-size: 12px;
+    margin-top: 10px;
+}
+.blog .inner .card-info .text span{
+    transition: all 1s;
+}
+.blog .inner .card-info .text span:hover{
+    color: var(--color-gren);
+}
+.blog .card-icon .ac-content img{
+    width: 10%;
+}
+.blog .card-icon .images span:hover{
+    color: var(--color-gren);
+}
+/* end blog */
+/* start contact */
+.bg{
+    background-color: var(--color-white);
+    padding: 50px;
+}
+.contact{
+    background-image: linear-gradient(#2869c3c0,#2869c3c0),url(images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.contact form a{
+    transition: all 1s;
+}
+.contact form a:hover{
+    background-color: var(--color-gren);
+    color: var(--color-white);
+    border: 6px solid var(--color-hover);
+}
+.contact .icons i{
+    border: 3px solid rgba(0, 47, 255, 0.695);
+    border-radius: 50%;
+    transition: all 1s;
+    color: black;
+}
+.contact .icons i:hover{
+    background-color: rgb(0, 47, 255);
+    border-color: #CDE1F8;
+    color: white;
+}
+.contact h5{
+    position: relative;
+}
+.contact h5::before{
+    position: absolute;
+    content: '';
+    bottom: -10px;
+    width: 20%;
+    height: 3px;
+    left: 0;
+    background-color: var(--color-gren);
+}
+/* end contact */
+/* start fotter */
+.fotter{
+    background-color:var(--color-footer) ;
+    display: flow-root;
+}
+/* end fotter */
+/*!--------------------------------------------------------------------*/
+/* deatails css */
+/* start details-header */
+.details-header{
+    background-image: linear-gradient(#2869c3c0,#2869c3c0),url(images/overlay-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+    display: flow-root;
+}
+.details-header .info{
+    height: 50vh;
+}
+.details .carousel-indicators{
+    bottom: -50px;
+}
+.details .carousel-indicators [data-bs-target] {
+    background-color: var(--color-gren);
+    border-radius: 50%;
+}
+/* end details-header */
+/*!-------------------------------------------*/
+/* blog-single */
+.body ul{
+    position: relative;
+}
+.body ul::after{
+    position: absolute;
+    content: '';
+    background-color: var(--color-gren);
+    left: 1px;
+    width: 5px;
+    height: 100%;
+}
+.body .blockquote{
+    border-left: 4px solid var(--color-gren);
+    padding: 34px;
+}
+.body .comment-info h4{
+    position: relative;
+}
+.body .comment-info>h4::before{
+    position: absolute;
+    content: '';
+    background-color:var(--color-gren);
+    width: 10%;
+    height: 3px;
+    bottom: -10px;
+}
+.body .blog-form h3{
+    position: relative;
+}
+.body .blog-form>h3::before{
+    position: absolute;
+    content: '';
+    background-color: var(--color-gren);
+    width: 10%;
+    height: 3px;
+    bottom: -10px;
+}
+.body .before h5{
+    position: relative;
+}
+.body .before h5::before{
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 100%;
+    left: -13px;
+    background-color: var(--color-gren);
+}
+.body .post-line ol li {
+    position: relative;
+}
+.body .post-line ol li a{
+    color: var(--color-black);
+}
+.body .post-line ol li a:hover{
+    color: var(--color-gren);
+}
+.body .post-line ol li::before{
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 2px;
+    left: -18px;
+    top: 50%;
+    background-color: var(--color-gren);
+}
+/*!-------------------------------------------*/
+
